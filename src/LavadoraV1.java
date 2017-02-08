@@ -14,4 +14,10 @@ public class LavadoraV1 {
     public int getNumeroLavados() {
         return numeroLavados;
     }
+
+    public static void main(String[] args) {
+        LavadoraV1 lavadora1 = new LavadoraV1();
+        lavadora1.lavar();
+        lavadora1.lavar();
+    }
 }

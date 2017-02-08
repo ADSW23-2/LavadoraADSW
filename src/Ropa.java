@@ -1,6 +1,3 @@
-/**
- * Created by jcala on 08/02/2017.
- */
 public class Ropa implements Lavable{
 
     private String nombre;
@@ -41,5 +38,15 @@ public class Ropa implements Lavable{
 
     public Color getColor() {
         return color;
+    }
+    public static void main(String[] args) {
+
+        Ropa camisa = new Ropa("camisa",150,Color.ROJO);
+        Ropa pantalon = new Ropa("pantalón",300,Color.ROJO);
+        Ropa blusa = new Ropa("blusa",50,Color.BLANCO);
+        System.out.println(camisa.toString());
+        System.out.println(pantalon.toString());
+        System.out.println(blusa.toString());
+
     }
 }
