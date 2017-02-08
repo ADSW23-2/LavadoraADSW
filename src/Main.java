@@ -21,6 +21,11 @@ public class Main {
         Ropa[] miColada2 = {blusa,blusa,blusa};
         lavadora2.meterPrendas(miColada2);
         lavadora2.lavar();
+        lavadora2.vaciarLavadora();
+        //Segundo Llenado
+        lavadora2.meterPrendas(miColada2);
+        lavadora2.lavar();
+        lavadora2.vaciarLavadora();
         //Array Exceso de Elementos
         Ropa[] miColadaConDemasiadosElementos = {camisa,pantalon,blusa,blusa,blusa,blusa,camisa,blusa,blusa,blusa,blusa,blusa};
         lavadora2.meterPrendas(miColadaConDemasiadosElementos);

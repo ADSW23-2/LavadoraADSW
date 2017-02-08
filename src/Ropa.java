@@ -27,11 +27,19 @@ public class Ropa implements Lavable{
 
     @Override
     public boolean isColor() {
-      return (color.equals(Color.BLANCO)) ? false : true;
+      return !color.equals(Color.BLANCO);
     }
 
     @Override
     public int getPeso() {
         return peso;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Color getColor() {
+        return color;
     }
 }
