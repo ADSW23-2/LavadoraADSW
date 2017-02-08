@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class LavadoraV2 extends LavadoraV1{
 
     private static final int PESOMAX = 1000;
+    private static final int PRENDASMAX = 10;
     private int slotsVacios;
     private int pesoPrendas;
     private Ropa[] misPrendas;
@@ -12,26 +13,34 @@ public class LavadoraV2 extends LavadoraV1{
 
     public LavadoraV2(){
         super();
-        misPrendas = new Ropa[10];
+        misPrendas = new Ropa[PRENDASMAX];
         slotsVacios = 10;
         pesoPrendas = 0;
         System.out.println("Lavadora Vacia");
 
     }
 
-    @Override
-    public void lavar() {
-        super.lavar();
+    public void vaciarLavadora(){
+        //Vaciamos Lavadora
         Arrays.fill(misPrendas,null);
+        //Rst variables de control
         slotsVacios = 10;
         pesoPrendas = 0;
+        //log
+        System.out.println("Hemos vaciado la lavadora");
     }
 
     public boolean meterPrendas(Ropa[] mPrendas){
-        if(mPrendas.length <= slotsVacios()){
+        if(mPrendas.length <= slotsVacios){
             if(getPesoEnt(mPrendas) <= PESOMAX-pesoPrendas){
-                System.arraycopy(mPrendas,0,misPrendas,10-slotsVacios,mPrendas.length);
+                //Copiamos Array
+                System.arraycopy(mPrendas,0,misPrendas,PRENDASMAX-slotsVacios,mPrendas.length);
+                //Actualizamos datos de control
+                slotsVacios -= mPrendas.length;
+                pesoPrendas += getPesoEnt(mPrendas);
+                //Imprimimos logs
                 System.out.println("Todas las Prendas metidas");
+                System.out.printf("El peso de las prendas es: %d \nEl numero de prendas es %d\n",pesoPrendas,PRENDASMAX-slotsVacios);
                 return true;
             } else{
                 System.out.println("Error, Las prendas que se introducen pesan demasiado");
@@ -52,21 +61,5 @@ public class LavadoraV2 extends LavadoraV1{
         return mPrendasPeso;
     }
 
-    private int getPesoPrendas(){
-        int peso = 0;
-        for(Ropa p: misPrendas){
-            peso += p.getPeso();
-        }
-        return peso;
-    }
 
-    private int slotsVacios(){
-        int slots = 0;
-        for(Ropa p : misPrendas){
-            if(p == null){
-                slots++;
-            }
-        }
-        return slots;
-    }
 }
