@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="287f7957-33df-49c5-a89a-0fe2084769ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LavadoraTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LavadoraV3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LavadoraV4.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PesoExcedidoException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/test/Color.class" afterPath="$PROJECT_DIR$/out/production/test/Color.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/test/LavadoraV1.class" afterPath="$PROJECT_DIR$/out/production/test/LavadoraV1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/test/Ropa.class" afterPath="$PROJECT_DIR$/out/production/test/Ropa.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.iml" afterPath="$PROJECT_DIR$/test.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,8 +121,8 @@
       <file leaf-file-name="LavadoraTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LavadoraTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="108" column="35" lean-forward="false" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+            <state relative-caret-position="319">
+              <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1090#1096#0" expanded="true" />
@@ -771,7 +766,7 @@
       <workItem from="1486340818512" duration="53000" />
       <workItem from="1486542329462" duration="6706000" />
       <workItem from="1486586520661" duration="887000" />
-      <workItem from="1486821703009" duration="4601000" />
+      <workItem from="1486821703009" duration="4656000" />
     </task>
     <task id="LOCAL-00001" summary="Añadidos Mains a LavadoraV2, LavadoraV1, Ropa">
       <created>1486586722354</created>
@@ -780,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486586722354</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Añadido LavadoraV3, LavadoraV4,PesoExcedidoException,LavadoraTest">
+      <created>1486826355631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486826355631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -792,7 +794,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12689000" />
+    <option name="totallyTimeSpent" value="12744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,7 +819,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20083682" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20083682" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20083682" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,7 +848,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Añadidos Mains a LavadoraV2, LavadoraV1, Ropa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadidos Mains a LavadoraV2, LavadoraV1, Ropa" />
+    <MESSAGE value="Añadido LavadoraV3, LavadoraV4,PesoExcedidoException,LavadoraTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadido LavadoraV3, LavadoraV4,PesoExcedidoException,LavadoraTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1073,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LavadoraTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="108" column="35" lean-forward="false" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+        <state relative-caret-position="319">
+          <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1090#1096#0" expanded="true" />
