@@ -17,10 +17,9 @@ public class LavadoraV4 {
             miLista.addAll(entLista);
             System.out.println("Se han metido Correctamente");
             return true;
-        }else{
-            System.out.println("No se han podido metePesor");
-            return false;
         }
+        System.out.println("No se han podido metePesor");
+        return false;
     }
 
     public void vacia(){
@@ -30,12 +29,10 @@ public class LavadoraV4 {
 
     private boolean checkPeso(List<Ropa> entLista) throws Exception{
         int pesoTotal = getPeso(entLista) + getPeso(miLista);
-        if(pesoTotal<= PESOMAX){
-            return true;
-        }else{
+        if(pesoTotal >= PESOMAX){
             throw new PesoExcedidoException(pesoTotal,PESOMAX);
         }
-
+        return true;
     }
 
     private int getPeso(List<Ropa> lista) {
@@ -47,11 +44,10 @@ public class LavadoraV4 {
     }
 
     private boolean checkElementos(List<Ropa> entLista) throws Exception {
-        if(entLista.size()+miLista.size()<=PRENDASMAX){
-            return true;
-        }else{
+        if(entLista.size()+miLista.size()>=PRENDASMAX){
             throw new Exception("Exceso de Elementos");
         }
+            return true;
     }
 
     public List<Ropa> getRopa() {
